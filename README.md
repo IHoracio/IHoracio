@@ -4,7 +4,20 @@
 
 ---
 
-#### 𝕃𝕒𝕟𝕘𝕦𝕒𝕘𝕖𝕤 & 𝕋𝕠𝕠𝕝𝕤
-`Java` · `HTML` · `CSS` · `JavaScript` · `Git` · `Linux` · `VS Code`
+> ```java
+> List<String> profileStatus = Arrays.asList(
+>     "Profile Loaded", 
+>     "Dependencies Injected", 
+>     "Coffee Brewed", 
+>     "NullPointerException Avoided"
+> );
+> 
+> profileStatus.stream()
+>     .filter(s -> !s.contains("Error"))
+>     .map(String::toUpperCase)
+>     .reduce((a, b) -> a + " | " + b)
+>     .ifPresent(status -> 
+>         System.out.println("✅ FINAL STATUS: " + status + " | Welcome to the Profile! ")
+>     );
+> ```
 
----
