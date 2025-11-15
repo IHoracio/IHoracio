@@ -7,7 +7,7 @@
 > ```java
 >String description = Stream.of(profileDescription.split(""))
 >     .filter(s -> Character.isAlphabetic(s.charAt(0)))
->     .map(String::toUpperCase)
+>     .map(String::valueOf)
 >     .collect(Collectors.joining(" "));
 >
 >     System.out.println(description);
